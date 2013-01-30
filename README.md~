@@ -74,6 +74,7 @@ STEPS TO USE FOOTPRINT :-
 	
 
 	Note: BigDecimal is not working with footprint. Explicitly declare the type to integer/string(whichever suits) in the 			project_footprint.rb
+		set_primary_key :id in your class(Refer Book.rb) for OCIError: ORA-01741: illegal zero-length identifier:
 
 9. Using impressions
 	1. Find the record , for ex, a= Book.find(1)
@@ -82,8 +83,8 @@ STEPS TO USE FOOTPRINT :-
 	2. You can use order by and pagination as well.
 		b = a.impressions.desc(:updated_at).to_a.paginate(:page => params[:page], :per_page => 5)
 
-10. References : https://github.com/subhashb/footprint
-		 http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
+10. References : https://github.com/subhashb/footprint For documentation on footprint
+		 http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/ For documentation on mongodb
 
 
 Email: jibranrules@gmail.com
