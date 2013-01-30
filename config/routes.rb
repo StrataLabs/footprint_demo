@@ -52,6 +52,7 @@ Cool::Application.routes.draw do
 
   # See how all your routes lay out with "rake routes"
   match 'books' => 'books#index'
+  match 'member_plans' => 'member_plans#index'
   #get '/books/book_id' => 'books#index'
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.

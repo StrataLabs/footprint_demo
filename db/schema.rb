@@ -49,5 +49,6 @@ ActiveRecord::Schema.define(:version => 20130128064347) do
 
   add_synonym "books", "jbprod.books", :force => true
   add_synonym "jb_books_seq", "jbprod.seq_books", :force => true
+  add_synonym "member_plans", "memp.member_plans", :force => true
 
 end

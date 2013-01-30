@@ -10,7 +10,7 @@ class BooksController < ApplicationController
 				b = a.impressions.desc(:updated_at).to_a.paginate(:page => params[:page], :per_page => 5)
 				b.each do |impression|
 					book_hash << { :status => impression.status, :location => impression.location, 
-						:origlocation => impression.origlocation }
+						:origlocation => impression.origlocation, :updated_at => impression.updated_at }
 				end
 			end
 			respond_to do | format |
