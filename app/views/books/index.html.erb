@@ -1,0 +1,17 @@
+<div class="span-24 last">
+<%= form_tag "/books" do -%>	
+<%= field_set_tag 'Search' do %>		
+	
+	<%= label_tag 'Book No'%>
+	<%= text_field_tag :bookid, params[:bookid] %>
+	<br/>
+
+	<%= submit_tag "Submit", :name => nil %>
+<% end -%>
+<% end -%>
+
+</div>
+
+<% unless @b.nil?%>
+	<%= @b%>
+	<%end%>
