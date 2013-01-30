@@ -71,7 +71,9 @@ STEPS TO USE FOOTPRINT :-
 		class BookFootprint < Footprint::Impression
   		store_in collection: "books"
 		end
+	
 
+	Note: BigDecimal is not working with footprint. Explicitly declare the type to integer/string(whichever suits) in the 			project_footprint.rb
 
 9. Using impressions
 	1. Find the record , for ex, a= Book.find(1)
